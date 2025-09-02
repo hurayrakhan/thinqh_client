@@ -13,3 +13,13 @@ body {
     color-scheme: dark;
   }
 }
+
+
+.glass-card {
+    -webkit-backdrop-filter: blur(20px);
+    backdrop-filter: blur(20px);
+    background: #ffffff0d;
+    border: 1px solid #ffffff1a;
+    border-radius: 1.5rem;
+    box-shadow: 0 8px 32px #0000004d;
+  }

@@ -1,13 +1,40 @@
+import { AboutSection } from "~/components/AboutSection";
 import type { Route } from "./+types/home";
-import { Welcome } from "../welcome/welcome";
 
 export function meta({}: Route.MetaArgs) {
   return [
-    { title: "New React Router App" },
-    { name: "description", content: "Welcome to React Router!" },
+    { title: "Home || Thinqh" },
+    { name: "description", content: "Welcome to Thinqh!" },
   ];
 }
 
 export default function Home() {
-  return <Welcome />;
+  return <div className="min-h-screen bg-background text-foreground">
+      {/* Navigation */}
+      {/* <Navigation /> */}
+      
+      {/* Main Content */}
+      <main>
+        {/* Hero Section */}
+        {/* <HeroSection /> */}
+        
+        {/* Services Section */}
+        {/* <ServicesSection /> */}
+        
+        {/* About Section */}
+        <AboutSection />
+        
+        {/* Portfolio Section */}
+        {/* <PortfolioSection /> */}
+        
+        {/* Testimonials Section */}
+        {/* <TestimonialsSection /> */}
+        
+        {/* CTA Section */}
+        {/* <CTASection /> */}
+      </main>
+      
+      {/* Footer */}
+      {/* <Footer /> */}
+    </div>;
 }
