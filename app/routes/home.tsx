@@ -1,5 +1,6 @@
 import { AboutSection } from "~/components/AboutSection";
 import type { Route } from "./+types/home";
+import { Navigation } from "~/components/Navigation";
 
 export function meta({}: Route.MetaArgs) {
   return [
@@ -11,7 +12,7 @@ export function meta({}: Route.MetaArgs) {
 export default function Home() {
   return <div className="min-h-screen bg-background text-foreground">
       {/* Navigation */}
-      {/* <Navigation /> */}
+      <Navigation />
       
       {/* Main Content */}
       <main>
