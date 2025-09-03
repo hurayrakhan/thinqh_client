@@ -50,8 +50,8 @@ export function AboutSection() {
     <section id="about" className="py-24 relative">
       {/* Background Elements */}
       <div className="absolute inset-0">
-        <div className="absolute top-1/2 left-0 w-72 h-72 bg-accent/10 rounded-full blur-3xl"></div>
-        <div className="absolute top-0 right-0 w-96 h-96 bg-primary/10 rounded-full blur-3xl"></div>
+        <div className="absolute top-1/2 left-0 w-72 h-72 bg-[#00f5d4]/10 rounded-full blur-3xl"></div>
+        <div className="absolute top-0 right-0 w-96 h-96 bg-[#8b5cf6]/10 rounded-full blur-3xl"></div>
       </div>
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
@@ -128,12 +128,12 @@ export function AboutSection() {
             <div className="glass-card p-8 relative overflow-hidden">
               {/* Background Pattern */}
               <div className="absolute inset-0 opacity-10">
-                <div className="absolute top-0 right-0 w-32 h-32 border border-accent rounded-full"></div>
-                <div className="absolute bottom-0 left-0 w-24 h-24 border border-primary rounded-full"></div>
+                <div className="absolute top-0 right-0 w-32 h-32 border border-[#00f5d4] rounded-full"></div>
+                <div className="absolute bottom-0 left-0 w-24 h-24 border border-[#8b5cf6] rounded-full"></div>
               </div>
               
               <div className="relative z-10">
-                <div className="w-16 h-16 bg-gradient-to-r from-primary to-accent rounded-full flex items-center justify-center mb-6">
+                <div className="w-16 h-16 bg-gradient-to-r from-[#8b5cf6] to-[#00f5d4] rounded-full flex items-center justify-center mb-6">
                   <Lightbulb className="w-8 h-8 text-white" />
                 </div>
                 
@@ -146,15 +146,15 @@ export function AboutSection() {
                 
                 <div className="space-y-3">
                   <div className="flex items-center space-x-3">
-                    <div className="w-2 h-2 bg-accent rounded-full"></div>
+                    <div className="w-2 h-2 bg-[#00f5d4] rounded-full"></div>
                     <span className="text-white/70">Human-Centered Design</span>
                   </div>
                   <div className="flex items-center space-x-3">
-                    <div className="w-2 h-2 bg-primary rounded-full"></div>
+                    <div className="w-2 h-2 bg-[#8b5cf6] rounded-full"></div>
                     <span className="text-white/70">Scalable & Secure Solutions</span>
                   </div>
                   <div className="flex items-center space-x-3">
-                    <div className="w-2 h-2 bg-accent rounded-full"></div>
+                    <div className="w-2 h-2 bg-[#00f5d4] rounded-full"></div>
                     <span className="text-white/70">Data-Driven Innovation</span>
                   </div>
                 </div>
@@ -171,7 +171,7 @@ export function AboutSection() {
               <div className="flex items-center space-x-4">
                 <div className="flex -space-x-2">
                   {[1, 2, 3, 4].map((i) => (
-                    <div key={i} className="w-8 h-8 bg-gradient-to-r from-primary to-accent rounded-full border-2 border-background"></div>
+                    <div key={i} className="w-8 h-8 bg-gradient-to-r from-[#8b5cf6] to-[#00f5d4] rounded-full border-2 border-[#0a0a1a]"></div>
                   ))}
                 </div>
                 <span className="text-sm text-white/60">Trusted by industry leaders</span>
