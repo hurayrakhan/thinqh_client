@@ -19,10 +19,10 @@ export function Navigation() {
           {/* Logo */}
           <div className="flex-shrink-0">
             <div className="flex items-center space-x-2">
-              <div className="w-8 h-8 bg-gradient-to-r from-primary to-accent rounded-lg flex items-center justify-center">
+              <div className="w-8 h-8 bg-gradient-to-r from-[#8b5cf6] to-[#00f5d4] rounded-lg flex items-center justify-center">
                 <span className="text-white font-bold text-lg">T</span>
               </div>
-              <span className="font-bold text-xl bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
+              <span className="font-bold text-xl bg-gradient-to-r from-[#8b5cf6] to-[#00f5d4] bg-clip-text text-transparent">
                 Thinqh
               </span>
             </div>
@@ -35,7 +35,7 @@ export function Navigation() {
                 <a
                   key={item.name}
                   href={item.href}
-                  className="text-white hover:text-accent px-3 py-2 rounded-md transition-colors duration-200"
+                  className="text-white hover:text-[#00f5d4] px-3 py-2 rounded-md transition-colors duration-200"
                 >
                   {item.name}
                 </a>
@@ -45,7 +45,7 @@ export function Navigation() {
 
           {/* CTA Button */}
           <div className="hidden md:block">
-            <button className="bg-gradient-to-r from-primary to-accent hover:from-primary/80 hover:to-accent/80 text-white border-0">
+            <button className="bg-gradient-to-r from-[#8b5cf6] to-[#00f5d4] hover:from-[var(--primary)]/80 hover:to-[var(--accent)]/80 text-white border-0 rounded-xl py-2 px-3 text-xs ">
               Get Started
             </button>
           </div>
@@ -70,14 +70,14 @@ export function Navigation() {
               <a
                 key={item.name}
                 href={item.href}
-                className="text-white hover:text-accent block px-3 py-2 rounded-md transition-colors duration-200"
+                className="text-white hover:text-[#00f5d4] block px-3 py-2 rounded-md transition-colors duration-200"
                 onClick={() => setIsOpen(false)}
               >
                 {item.name}
               </a>
             ))}
             <div className="px-3 py-2">
-              <button className="bg-gradient-to-r from-primary to-accent hover:from-primary/80 hover:to-accent/80 text-white border-0 w-full">
+              <button className="bg-gradient-to-r from-[#8b5cf6] to-[#00f5d4] hover:from-[#8b5cf6]/80 hover:to-[#00f5d4]/80 text-white border-0 w-full rounded-xl py-2 px-auto text-xs">
                 Get Started
               </button>
             </div>

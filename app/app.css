@@ -15,6 +15,15 @@ body {
 }
 
 
+
+.glass {
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+    background: #ffffff14;
+    border: 1px solid #ffffff1a;
+    border-radius: 1rem;
+}
+
 .glass-card {
     -webkit-backdrop-filter: blur(20px);
     backdrop-filter: blur(20px);
@@ -22,4 +31,86 @@ body {
     border: 1px solid #ffffff1a;
     border-radius: 1.5rem;
     box-shadow: 0 8px 32px #0000004d;
-  }
+}
+
+:root {
+  --font-size: 14px;
+  --background: #0a0a1a;
+  --foreground: #fff;
+  --card: #ffffff14;
+  --card-foreground: #fff;
+  --popover: #191932f2;
+  --popover-foreground: #fff;
+  --primary: #6366f1;
+  --primary-foreground: #fff;
+  --secondary: #6366f133;
+  --secondary-foreground: #fff;
+  --muted: #ffffff1a;
+  --muted-foreground: #ffffffb3;
+  --accent: #00d4aa;
+  --accent-foreground: #0a0a1a;
+  --destructive: #ef4444;
+  --destructive-foreground: #fff;
+  --border: #ffffff1a;
+  --input: #ffffff0d;
+  --input-background: #ffffff0d;
+  --switch-background: #fff3;
+  --font-weight-medium: 500;
+  --font-weight-normal: 400;
+  --ring: #6366f1;
+  --chart-1: #6366f1;
+  --chart-2: #8b5cf6;
+  --chart-3: #00d4aa;
+  --chart-4: #06b6d4;
+  --chart-5: #10b981;
+  --radius: 1rem;
+  --sidebar: #191932f2;
+  --sidebar-foreground: #fff;
+  --sidebar-primary: #6366f1;
+  --sidebar-primary-foreground: #fff;
+  --sidebar-accent: #6366f133;
+  --sidebar-accent-foreground: #fff;
+  --sidebar-border: #ffffff1a;
+  --sidebar-ring: #6366f1;
+  --gradient-primary: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  --gradient-secondary: linear-gradient(135deg, #6366f1 0%, #8b5cf6 100%);
+  --gradient-accent: linear-gradient(135deg, #00d4aa 0%, #06b6d4 100%);
+  --glass-bg: #ffffff14;
+  --glass-border: #ffffff1a;
+  --neural-network: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%236366f1' fill-opacity='0.05'%3E%3Ccircle cx='30' cy='30' r='2'/%3E%3Ccircle cx='10' cy='10' r='1'/%3E%3Ccircle cx='50' cy='10' r='1'/%3E%3Ccircle cx='10' cy='50' r='1'/%3E%3Ccircle cx='50' cy='50' r='1'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+}
+
+.dark {
+  --background: #030712;
+  --foreground: #fff;
+  --card: #ffffff0d;
+  --card-foreground: #fff;
+  --popover: #0f0f1efa;
+  --popover-foreground: #fff;
+  --primary: #8b5cf6;
+  --primary-foreground: #fff;
+  --secondary: #8b5cf633;
+  --secondary-foreground: #fff;
+  --muted: #ffffff14;
+  --muted-foreground: #fff9;
+  --accent: #00f5d4;
+  --accent-foreground: #030712;
+  --destructive: #ef4444;
+  --destructive-foreground: #fff;
+  --border: #ffffff14;
+  --input: #ffffff08;
+  --ring: #8b5cf6;
+  --chart-1: #8b5cf6;
+  --chart-2: #6366f1;
+  --chart-3: #00f5d4;
+  --chart-4: #06b6d4;
+  --chart-5: #10b981;
+  --sidebar: #0f0f1efa;
+  --sidebar-foreground: #fff;
+  --sidebar-primary: #8b5cf6;
+  --sidebar-primary-foreground: #fff;
+  --sidebar-accent: #8b5cf633;
+  --sidebar-accent-foreground: #fff;
+  --sidebar-border: #ffffff14;
+  --sidebar-ring: #8b5cf6;
+}
