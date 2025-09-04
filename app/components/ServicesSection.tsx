@@ -85,7 +85,7 @@ export function ServicesSection() {
             return (
               <section 
                 key={index} 
-                className="glass-card border-white/10 hover:border-[#8b5cf6]/30 transition-all duration-300 group hover:-translate-y-2"
+                className="glass-card border-white/10 hover:border-[#8b5cf6]/30 transition-all duration-300 group hover:-translate-y-2 p-6"
               >
                 <div className="pb-4">
                   <div className="relative h-48 mb-6 rounded-xl overflow-hidden">
