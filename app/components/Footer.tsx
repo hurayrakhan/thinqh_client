@@ -48,8 +48,8 @@ export function Footer() {
     <footer className="relative border-t border-white/10">
       {/* Background Elements */}
       <div className="absolute inset-0">
-        <div className="absolute bottom-0 left-0 w-96 h-96 bg-primary/5 rounded-full blur-3xl"></div>
-        <div className="absolute top-0 right-0 w-72 h-72 bg-accent/5 rounded-full blur-3xl"></div>
+        <div className="absolute bottom-0 left-0 w-96 h-96 bg-[#8b5cf6]/5 rounded-full blur-3xl"></div>
+        <div className="absolute top-0 right-0 w-72 h-72 bg-[#00f5d4]/5 rounded-full blur-3xl"></div>
       </div>
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
@@ -60,10 +60,10 @@ export function Footer() {
             <div className="lg:col-span-2 space-y-6">
               {/* Logo */}
               <div className="flex items-center space-x-3">
-                <div className="w-10 h-10 bg-gradient-to-r from-primary to-accent rounded-xl flex items-center justify-center">
+                <div className="w-10 h-10 bg-gradient-to-r from-[#8b5cf6] to-[#00f5d4] rounded-xl flex items-center justify-center">
                   <Brain className="w-6 h-6 text-white" />
                 </div>
-                <span className="text-2xl font-bold bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
+                <span className="text-2xl font-bold bg-gradient-to-r from-[#8b5cf6] to-[#00f5d4] bg-clip-text text-transparent">
                   Thinqh
                 </span>
               </div>
@@ -77,15 +77,15 @@ export function Footer() {
               {/* Contact Info */}
               <div className="space-y-3">
                 <div className="flex items-center space-x-3 text-white/80">
-                  <Mail className="w-5 h-5 text-accent" />
+                  <Mail className="w-5 h-5 text-[#00f5d4]" />
                   <span>hello@thinqh.com</span>
                 </div>
                 <div className="flex items-center space-x-3 text-white/80">
-                  <Phone className="w-5 h-5 text-accent" />
+                  <Phone className="w-5 h-5 text-[#00f5d4]" />
                   <span>+1 (555) 123-4567</span>
                 </div>
                 <div className="flex items-center space-x-3 text-white/80">
-                  <MapPin className="w-5 h-5 text-accent" />
+                  <MapPin className="w-5 h-5 text-[#00f5d4]" />
                   <span>Global & Remote-First</span>
                 </div>
               </div>
@@ -101,7 +101,7 @@ export function Footer() {
                       className="w-10 h-10 glass rounded-full flex items-center justify-center hover:bg-white/20 transition-colors group"
                       aria-label={social.label}
                     >
-                      <IconComponent className="w-5 h-5 text-white/70 group-hover:text-accent transition-colors" />
+                      <IconComponent className="w-5 h-5 text-white/70 group-hover:text-[#00f5d4] transition-colors" />
                     </a>
                   );
                 })}
@@ -116,7 +116,7 @@ export function Footer() {
                   <li key={index}>
                     <a 
                       href={link.href} 
-                      className="text-white/70 hover:text-accent transition-colors flex items-center group"
+                      className="text-white/70 hover:text-[#00f5d4] transition-colors flex items-center group"
                     >
                       {link.name}
                       <ArrowRight className="w-3 h-3 ml-2 opacity-0 group-hover:opacity-100 group-hover:translate-x-1 transition-all duration-200" />
@@ -134,7 +134,7 @@ export function Footer() {
                   <li key={index}>
                     <a 
                       href={service.href} 
-                      className="text-white/70 hover:text-accent transition-colors flex items-center group"
+                      className="text-white/70 hover:text-[#00f5d4] transition-colors flex items-center group"
                     >
                       {service.name}
                       <ArrowRight className="w-3 h-3 ml-2 opacity-0 group-hover:opacity-100 group-hover:translate-x-1 transition-all duration-200" />
@@ -152,7 +152,7 @@ export function Footer() {
                   <li key={index}>
                     <a 
                       href={resource.href} 
-                      className="text-white/70 hover:text-accent transition-colors flex items-center group"
+                      className="text-white/70 hover:text-[#00f5d4] transition-colors flex items-center group"
                     >
                       {resource.name}
                       <ArrowRight className="w-3 h-3 ml-2 opacity-0 group-hover:opacity-100 group-hover:translate-x-1 transition-all duration-200" />
@@ -164,7 +164,7 @@ export function Footer() {
           </div>
         </div>
 
-        <div className="bg-white/10" />
+        <hr className="text-white/10" />
 
         {/* Newsletter Signup */}
         <div className="py-8">
@@ -182,9 +182,9 @@ export function Footer() {
                 <input
                   type="email"
                   placeholder="Your email address"
-                  className="flex-1 px-4 py-2 bg-white/10 border border-white/20 rounded-lg text-white placeholder-white/60 focus:outline-none focus:border-accent"
+                  className="flex-1 px-4 py-2 bg-white/10 border border-white/20 rounded-lg text-white placeholder-white/60 focus:outline-none focus:border-[#00f5d4]"
                 />
-                <button className="px-6 py-2 bg-gradient-to-r from-primary to-accent rounded-lg text-white hover:from-primary/80 hover:to-accent/80 transition-all duration-300 whitespace-nowrap">
+                <button className="px-6 py-2 bg-gradient-to-r from-[#8b5cf6] to-[#00f5d4] rounded-lg text-white hover:from-[#8b5cf6]/80 hover:to-[#00f5d4]/80 transition-all duration-300 whitespace-nowrap">
                   Subscribe
                 </button>
               </div>
@@ -192,7 +192,7 @@ export function Footer() {
           </div>
         </div>
 
-        <div className="bg-white/10" />
+        <hr className="text-white/10" />
 
         {/* Bottom Bar */}
         <div className="py-8">
@@ -202,17 +202,17 @@ export function Footer() {
             </div>
             
             <div className="flex items-center space-x-6">
-              <p className="border-green-500/30 text-green-400">
+              <p className="border rounded-4xl py-1 px-2 text-xs border-green-500/30 text-green-400">
                 ● Online
               </p>
               <div className="flex space-x-6 text-sm">
-                <a href="#" className="text-white/60 hover:text-accent transition-colors">
+                <a href="#" className="text-white/60 hover:text-[#00f5d4] transition-colors">
                   Privacy Policy
                 </a>
-                <a href="#" className="text-white/60 hover:text-accent transition-colors">
+                <a href="#" className="text-white/60 hover:text-[#00f5d4] transition-colors">
                   Terms of Service
                 </a>
-                <a href="#" className="text-white/60 hover:text-accent transition-colors">
+                <a href="#" className="text-white/60 hover:text-[#00f5d4] transition-colors">
                   Cookie Policy
                 </a>
               </div>
