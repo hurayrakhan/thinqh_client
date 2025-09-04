@@ -2,6 +2,7 @@ import { AboutSection } from "~/components/AboutSection";
 import type { Route } from "./+types/home";
 import { Navigation } from "~/components/Navigation";
 import { HeroSection } from "~/components/HeroSection";
+import { Footer } from "~/components/Footer";
 
 export function meta({}: Route.MetaArgs) {
   return [
@@ -37,6 +38,6 @@ export default function Home() {
       </main>
       
       {/* Footer */}
-      {/* <Footer /> */}
+      <Footer />
     </div>;
 }
