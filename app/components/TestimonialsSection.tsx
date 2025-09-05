@@ -80,11 +80,11 @@ export function TestimonialsSection() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         {/* Section Header */}
         <div className="text-center mb-16">
-          <span className="mb-6 bg-white/10 text-white border-white/20">
+          <span className=" bg-white/10 text-white border border-white/20 rounded-4xl px-2 py-1 text-xs font-medium">
             Client Testimonials
           </span>
           
-          <h2 className="text-3xl md:text-5xl font-bold mb-6">
+          <h2 className="text-3xl md:text-5xl font-bold mb-6 mt-6">
             <span className="bg-gradient-to-r from-white to-white/80 bg-clip-text text-transparent">
               Trusted by Industry
             </span>
