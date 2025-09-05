@@ -57,7 +57,7 @@ export function AboutSection() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         {/* Section Header */}
         <div className="text-center mb-16">
-          <span  className=" px-3 rounded-4xl py-1 text-xs font-medium bg-white/10 text-white border-white/20">
+          <span  className=" bg-white/10 text-white border border-white/20 rounded-4xl px-2 py-1 text-xs font-medium">
             About Thinqh
           </span>
           
