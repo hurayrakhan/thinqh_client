@@ -41,13 +41,13 @@ export function HeroSection() {
             {/* CTA Buttons */}
             <div className="flex flex-col sm:flex-row gap-4">
               <button  
-                className="bg-gradient-to-r from-[#8b5cf6] to-[#00f5d4] hover:from-[#8b5cf6]/80 hover:to-[#00f5d4]/80 text-white border-0 flex items-center px-4 py-2 rounded-xl group"
+                className="bg-gradient-to-r from-[#8b5cf6] to-[#00f5d4] text-sm hover:from-[#8b5cf6]/80 hover:to-[#00f5d4]/80 text-white border-0 flex items-center px-4 py-2 rounded-xl group"
               >
                 Get Started Today
                 <ArrowRight className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform" />
               </button>
               <button 
-                className="px-4 py-2 rounded-xl border border-white/20 text-white hover:bg-white/10 hover:border-white/40 hover:text-[#00f5d4] transition-colors"
+                className="px-4 py-2 rounded-xl bg-[#0a0a1a] border border-white/20 text-white text-sm  hover:bg-white/10 hover:border-white/40 hover:text-[#00f5d4]"
               >
                 Book a Demo
               </button>
