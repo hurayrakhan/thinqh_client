@@ -50,23 +50,23 @@ export function PortfolioSection() {
     <section id="portfolio" className="py-24 relative">
       {/* Background Elements */}
       <div className="absolute inset-0">
-        <div className="absolute top-1/4 right-0 w-96 h-96 bg-primary/10 rounded-full blur-3xl"></div>
-        <div className="absolute bottom-1/4 left-0 w-72 h-72 bg-accent/10 rounded-full blur-3xl"></div>
+        <div className="absolute top-1/4 right-0 w-96 h-96 bg-[#8b5cf6]/10 rounded-full blur-3xl"></div>
+        <div className="absolute bottom-1/4 left-0 w-72 h-72 bg-[#8b5cf6]/10 rounded-full blur-3xl"></div>
       </div>
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         {/* Section Header */}
         <div className="text-center mb-16">
-          <span className="mb-6 bg-white/10 text-white border-white/20">
+          <span className=" bg-white/10 text-white border border-white/20 rounded-4xl px-2 py-1 text-xs font-medium">
             Success Stories
           </span>
           
-          <h2 className="text-3xl md:text-5xl font-bold mb-6">
+          <h2 className="text-3xl md:text-5xl font-bold mb-6 mt-6">
             <span className="bg-gradient-to-r from-white to-white/80 bg-clip-text text-transparent">
               Transforming Ideas
             </span>
             <br />
-            <span className="bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
+            <span className="bg-gradient-to-r from-[#8b5cf6] to-[#8b5cf6] bg-clip-text text-transparent">
               into Reality
             </span>
           </h2>
@@ -80,7 +80,7 @@ export function PortfolioSection() {
         {/* Projects Grid */}
         <div className="space-y-12">
           {projects.map((project, index) => (
-            <div key={index} className="glass-card border-white/10 overflow-hidden group hover:border-primary/30 transition-all duration-500">
+            <div key={index} className="glass-card border-white/10 overflow-hidden group hover:border-[#8b5cf6]/30 transition-all duration-500">
               <div className={`grid grid-cols-1 ${index % 2 === 0 ? 'lg:grid-cols-2' : 'lg:grid-cols-2'} gap-0`}>
                 {/* Image Column */}
                 <div className={`relative h-80 lg:h-auto ${index % 2 === 1 ? 'lg:order-2' : ''}`}>
@@ -122,7 +122,7 @@ export function PortfolioSection() {
                         const IconComponent = metric.icon;
                         return (
                           <div key={metricIndex} className="flex items-center space-x-4 glass p-4 rounded-xl">
-                            <div className="w-10 h-10 bg-gradient-to-r from-primary to-accent rounded-full flex items-center justify-center flex-shrink-0">
+                            <div className="w-10 h-10 bg-gradient-to-r from-[#8b5cf6] to-[#00f5d4] rounded-full flex items-center justify-center flex-shrink-0">
                               <IconComponent className="w-5 h-5 text-white" />
                             </div>
                             <div>
@@ -139,7 +139,7 @@ export function PortfolioSection() {
                       <h4 className="text-white font-semibold mb-3">Technologies Used:</h4>
                       <div className="flex flex-wrap gap-2">
                         {project.technologies.map((tech, techIndex) => (
-                          <span key={techIndex} className="border border-white/20 text-white/80">
+                          <span key={techIndex} className="border border-white/20 text-white/80 rounded-4xl px-2 py-0.5 text-xs">
                             {tech}
                           </span>
                         ))}
@@ -152,7 +152,7 @@ export function PortfolioSection() {
                         <div className="text-sm text-white/60">Client</div>
                         <div className="font-semibold text-white">{project.client}</div>
                       </div>
-                      <button className="flex items-center space-x-2 text-accent hover:text-accent/80 transition-colors">
+                      <button className="flex items-center space-x-2 text-[#00f5d4] hover:text-[#00f5d4]/80 transition-colors">
                         <span>View Case Study</span>
                         <ArrowRight className="w-4 h-4" />
                       </button>
@@ -173,7 +173,7 @@ export function PortfolioSection() {
             <p className="text-white/70 mb-6">
               Join the ranks of industry leaders who have transformed their operations with intelligent, scalable solutions.
             </p>
-            <button className="bg-gradient-to-r from-primary to-accent hover:from-primary/80 hover:to-accent/80 text-white px-8 py-3 rounded-full transition-all duration-300 group">
+            <button className="bg-gradient-to-r from-[#8b5cf6] to-[#00f5d4] hover:from-[#8b5cf6]/80 hover:to-[#00f5d4]/80 text-white px-8 py-3 rounded-full transition-all duration-300 group">
               Start Your Project
               <ArrowRight className="ml-2 w-4 h-4 inline group-hover:translate-x-1 transition-transform" />
             </button>
