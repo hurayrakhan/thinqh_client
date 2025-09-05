@@ -63,12 +63,12 @@ export function CTASection() {
                   placeholder="Enter your email address"
                   value={email}
                   onChange={(e) => setEmail(e.target.value)}
-                  className="flex-1 bg-white/10 border-white/20 text-white placeholder-white/60 focus:border-[#00f5d4]"
+                  className="px-3 py-1.5 rounded-xl flex-1 bg-white/10 border border-white/20 text-white text-xs font-medium placeholder-white/60 focus:border-[#00f5d4]"
                   required
                 />
                 <button 
                   type="submit"
-                  className="bg-gradient-to-r from-[#8b5cf6] to-[#00f5d4] hover:from-[#8b5cf6]/80 hover:to-[#00f5d4]/80 text-white border-0 group"
+                  className="flex items-center px-3 py-1.5 rounded-xl bg-gradient-to-r from-[#8b5cf6] to-[#00f5d4] hover:from-[#8b5cf6]/80 hover:to-[#00f5d4]/80 text-white text-xs font-medium border-0 group"
                 >
                   Get Started
                   <ArrowRight className="ml-2 w-4 h-4 group-hover:translate-x-1 transition-transform" />
@@ -79,13 +79,13 @@ export function CTASection() {
             {/* Action Buttons */}
             <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12">
               <button 
-                className="bg-gradient-to-r from-[#8b5cf6] to-[#00f5d4] hover:from-[#8b5cf6]/80 hover:to-[#00f5d4]/80 text-white border-0 group"
+                className="flex items-center px-3 py-1.5 rounded-xl bg-gradient-to-r from-[#8b5cf6] to-[#00f5d4] hover:from-[#8b5cf6]/80 hover:to-[#00f5d4]/80 text-white text-xs font-medium border-0 group"
               >
                 Schedule Free Consultation
                 <Mail className="ml-2 w-5 h-5" />
               </button>
               <button 
-                className="border-white/30 text-white hover:bg-white/10 hover:border-white/50 group"
+                className="flex items-center px-3 py-1.5 rounded-xl border border-white/30 text-white text-xs font-medium bg-[#0a0a1a] hover:bg-white/10 hover:border-white/50 group"
               >
                 Call Us Now
                 <Phone className="ml-2 w-5 h-5" />
@@ -133,7 +133,7 @@ export function CTASection() {
                   Book a personalized demo to see how our intelligent solutions can specifically 
                   benefit your business operations and drive sustainable growth.
                 </p>
-                <button className="border-white/30 text-white hover:bg-white/10 group-hover:border-[#8b5cf6]">
+                <button className="flex items-center px-3 py-2  text-sm border border-white/30 rounded-xl text-white bg-[#0a0a1a] hover:bg-white/10 group-hover:border-[#8b5cf6]">
                   Book Demo
                   <ArrowRight className="ml-2 w-4 h-4" />
                 </button>
@@ -153,7 +153,7 @@ export function CTASection() {
                   Have questions about technology implementation? Our experts are ready to discuss 
                   your specific needs and create a custom solution strategy.
                 </p>
-                <button className="border-white/30 text-white hover:bg-white/10 group-hover:border-[#00f5d4]">
+                <button className="flex items-center px-3 py-2  text-sm border border-white/30 rounded-xl text-white bg-[#0a0a1a] hover:bg-white/10 group-hover:border-[#8b5cf6]">
                   Contact Us
                   <ArrowRight className="ml-2 w-4 h-4" />
                 </button>
