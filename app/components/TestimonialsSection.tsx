@@ -1,5 +1,3 @@
-import { Card, CardContent } from "./ui/card";
-import { Badge } from "./ui/badge";
 import { Star, Quote, ChevronLeft, ChevronRight } from "lucide-react";
 import { useState } from "react";
 
@@ -75,23 +73,23 @@ export function TestimonialsSection() {
     <section className="py-24 relative">
       {/* Background Elements */}
       <div className="absolute inset-0">
-        <div className="absolute top-0 left-1/3 w-96 h-96 bg-accent/10 rounded-full blur-3xl"></div>
-        <div className="absolute bottom-0 right-1/3 w-72 h-72 bg-primary/10 rounded-full blur-3xl"></div>
+        <div className="absolute top-0 left-1/3 w-96 h-96 bg-[#00f5d4]/10 rounded-full blur-3xl"></div>
+        <div className="absolute bottom-0 right-1/3 w-72 h-72 bg-[#8b5cf6]/10 rounded-full blur-3xl"></div>
       </div>
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         {/* Section Header */}
         <div className="text-center mb-16">
-          <Badge variant="secondary" className="mb-6 bg-white/10 text-white border-white/20">
+          <span className="mb-6 bg-white/10 text-white border-white/20">
             Client Testimonials
-          </Badge>
+          </span>
           
           <h2 className="text-3xl md:text-5xl font-bold mb-6">
             <span className="bg-gradient-to-r from-white to-white/80 bg-clip-text text-transparent">
               Trusted by Industry
             </span>
             <br />
-            <span className="bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
+            <span className="bg-gradient-to-r from-[#8b5cf6] to-[#00f5d4] bg-clip-text text-transparent">
               Leaders Worldwide
             </span>
           </h2>
@@ -104,10 +102,10 @@ export function TestimonialsSection() {
 
         {/* Main Testimonial Carousel */}
         <div className="max-w-4xl mx-auto mb-16">
-          <Card className="glass-card border-white/10 relative overflow-hidden">
-            <CardContent className="p-8 md:p-12">
+          <div className="glass-card border-white/10 relative overflow-hidden">
+            <div className="p-8 md:p-12">
               {/* Quote Icon */}
-              <div className="absolute top-6 right-6 text-primary/20">
+              <div className="absolute top-6 right-6 text-[#8b5cf6]/20">
                 <Quote className="w-16 h-16" />
               </div>
 
@@ -140,7 +138,7 @@ export function TestimonialsSection() {
 
                 {/* Author Info */}
                 <div className="flex items-center space-x-4">
-                  <div className="w-16 h-16 bg-gradient-to-r from-primary to-accent rounded-full flex items-center justify-center text-white font-bold text-lg">
+                  <div className="w-16 h-16 bg-gradient-to-r from-[#8b5cf6] to-[#00f5d4] rounded-full flex items-center justify-center text-white font-bold text-lg">
                     {testimonials[currentTestimonial].name.split(' ').map(n => n[0]).join('')}
                   </div>
                   <div>
@@ -150,7 +148,7 @@ export function TestimonialsSection() {
                     <div className="text-white/70">
                       {testimonials[currentTestimonial].role}
                     </div>
-                    <div className="text-accent font-medium">
+                    <div className="text-[#00f5d4] font-medium">
                       {testimonials[currentTestimonial].company}
                     </div>
                   </div>
@@ -164,13 +162,13 @@ export function TestimonialsSection() {
                     key={index}
                     onClick={() => setCurrentTestimonial(index)}
                     className={`w-2 h-2 rounded-full transition-colors ${
-                      index === currentTestimonial ? 'bg-accent' : 'bg-white/30'
+                      index === currentTestimonial ? 'bg-[#00f5d4]' : 'bg-white/30'
                     }`}
                   />
                 ))}
               </div>
-            </CardContent>
-          </Card>
+            </div>
+          </div>
         </div>
 
         {/* Company Logos Grid */}
