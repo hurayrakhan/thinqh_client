@@ -17,7 +17,7 @@ export function Navigation() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
-          <div className="flex-shrink-0">
+          <a href="#home" className="flex-shrink-0">
             <div className="flex items-center space-x-2">
               <div className="w-8 h-8 bg-gradient-to-r from-[#8b5cf6] to-[#00f5d4] rounded-lg flex items-center justify-center">
                 <span className="text-white font-bold text-lg">T</span>
@@ -26,7 +26,7 @@ export function Navigation() {
                 Thinqh
               </span>
             </div>
-          </div>
+          </a>
 
           {/* Desktop Navigation */}
           <div className="hidden md:block">
